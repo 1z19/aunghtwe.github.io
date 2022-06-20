@@ -10,17 +10,31 @@
   <body>
     <div class="header">
       <h1>Htwe</h1>
-      <p class="h_aboutMe">About Me</p>
-      <p class="h_myProjects">Projects</p>
-      <p class="h_myExperience">Experience</p>
-      <p class="h_myResume">Resume</p>
-      <p class="h_contactMe">Contact Me</p>
+      <a href="#home" id="home" style="text-decoration: none">About Me</a>
+      <a href="#projects" style="text-decoration: none">Projects</a>
+      <a href="#experience" style="text-decoration: none">Experience</a>
+      <a href="#resume" style="text-decoration: none">Resume</a>
+      <a href="#contactMe" style="text-decoration: none">Contact Me</a>
     </div>
-    <div class="aboutMe">
+
+    <div class="intro">
       <h1 class="name">Aung Htwe</h1>
       <p class="major">Computer Engineer</p>
+      <div class="aboutMe">
+        <p>
+          Hi. I'm a second year computer engineer at Kansas State University
+          equipped with a computer and raging coffee addiction.
+        </p>
+      </div>
     </div>
 
     <div class="scrollbar"></div>
+
+    <script>
+      var home = document.getElementById("home");
+      home.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
   </body>
 </html>
