@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,22 +14,35 @@
   <body>
     <div class="header">
       <h1>Htwe</h1>
-      <a href="#home" id="home" style="text-decoration: none">About Me</a>
-      <a href="#projects" style="text-decoration: none">Projects</a>
-      <a href="#experience" style="text-decoration: none">Experience</a>
-      <a href="#resume" style="text-decoration: none">Resume</a>
-      <a href="#contactMe" style="text-decoration: none">Contact Me</a>
+      <a id="home" style="text-decoration: none">About Me</a>
+      <a id="projects" style="text-decoration: none">Projects</a>
+      <a id="experience" style="text-decoration: none">Experience</a>
+      <a id="resume" style="text-decoration: none">Resume</a>
+      <a id="contactMe" style="text-decoration: none">Contact Me</a>
     </div>
 
     <div class="intro">
       <h1 class="name">Aung Htwe</h1>
       <p class="major">Computer Engineer</p>
       <div class="aboutMe">
-        <p>
+        <p class="smallTxt">
           Hi. I'm a second year computer engineer at Kansas State University
           equipped with a computer and raging coffee addiction.
         </p>
       </div>
+    </div>
+
+    <div class="iconContainer">
+      <a href="https://github.com/aung-htwe" class="fa fa-github"></a>
+      <a
+        href="https://linkedin.com/in/aungshtwe/"
+        class="fa fa-linkedin-square"
+      ></a>
+    </div>
+
+    <div class="projectScroll">
+      <span></span>
+      <p class="smallTxt" id="toProjects">View My Projects</p>
     </div>
 
     <div class="scrollbar"></div>
@@ -34,6 +51,11 @@
       var home = document.getElementById("home");
       home.onclick = function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+
+      var scrollProjects = documennt.getElementById("toProjects");
+      scrollProjects.onclick = function () {
+        window.scrollTo({ top: 25, behavior: "smooth" });
       };
     </script>
   </body>
