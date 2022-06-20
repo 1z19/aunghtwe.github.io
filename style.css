@@ -53,14 +53,18 @@ body{
     margin-bottom:1vw;
 }
 
-.header p:hover{
+.header a:hover{
     cursor: pointer;
+}
+
+a:active, a:focus{
+    outline:0;
+    border: none;
 }
 
 
 .intro{
     width:60%;
-    height:500%;
     text-align:center;
     margin: 0 auto;
 }
@@ -75,9 +79,27 @@ body{
     color:white;
 }
 
-.aboutMe{
+.smallTxt{
     font: 1.5vw Consolas;
     color:white;
 }
 
+.iconContainer{
+    margin-top:5vh;
+    text-align:center;
+}
 
+.iconContainer a{
+    text-decoration:none;
+}
+
+.fa{
+    font-size:3vw;
+    color:white;
+    margin-right:1vw;
+}
+
+.projectScroll{
+    margin-top:20vh;
+    text-align:center;
+}
