@@ -12,18 +12,22 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
   </head>
   <body>
+    <div class="scrollbar"></div>
+
     <div class="header">
       <h1>Htwe</h1>
-      <a id="home" style="text-decoration: none">About Me</a>
-      <a id="projects" style="text-decoration: none">Projects</a>
+      <a id="home" style="text-decoration: none" onclick="toTop()">About Me</a>
+      <a id="projects" style="text-decoration: none" onclick="toProjects()"
+        >Projects</a
+      >
       <a id="experience" style="text-decoration: none">Experience</a>
       <a id="resume" style="text-decoration: none">Resume</a>
       <a id="contactMe" style="text-decoration: none">Contact Me</a>
     </div>
 
-    <div class="intro">
-      <h1 class="name">Aung Htwe</h1>
-      <p class="major">Computer Engineer</p>
+    <div class="intro" id="intro">
+      <h2>Aung Htwe</h2>
+      <h1>Computer Engineer</h1>
       <div class="aboutMe">
         <p class="smallTxt">
           Hi. I'm a second year computer engineer at Kansas State University
@@ -45,18 +49,21 @@
       <a class="smallTxt" id="toProjects">View My Projects</a>
     </div>
 
-    <div class="scrollbar"></div>
+    <div class="projects" id="projectContainer">
+      <h1>Projects</h1>
+    </div>
 
+    <!--    Scrolling Functions   -->
     <script>
-      var home = document.getElementById("home");
-      home.onclick = function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      };
+      function toTop() {
+        var element = document.getElementById("intro");
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
 
-      var scrollProjects = documennt.getElementById("toProjects");
-      scrollProjects.onclick = function () {
-        window.scrollTo({ top: 25, behavior: "smooth" });
-      };
+      function toProjects() {
+        var element = document.getElementById("projectContainer");
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     </script>
   </body>
 </html>
