@@ -104,18 +104,25 @@ a:active, a:focus{
 }
 
 
+.projectScroll{
+    margin-top:20vh;
+    text-align:center;
+}
+
+.projectScroll a:hover{
+    cursor:pointer;
+}
+
 .projects{
     margin: 0 auto;
     padding-top:7vh;
     margin-top:-7vh;
 }
 
+
 .projects h1{
     font: 2.5vw Consolas;
     color:white;
 }
 
-.projectScroll{
-    margin-top:20vh;
-    text-align:center;
-}
+
