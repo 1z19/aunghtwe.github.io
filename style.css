@@ -146,6 +146,7 @@ a:active, a:focus{
 .projectName{
     font: 2vw 'Prompt', sans-serif;
     color:white;
+    margin-left:0.3vw;
 }
 
 .projectOneContainer{
