@@ -38,7 +38,7 @@ body{
     float:left;
     color:white;
     opacity:1;
-    font: 1vw consolas;
+    font: 1vw 'Prompt', sans-serif;
     margin-left:2.5vw;
     margin-top:1.5vw;
     margin-bottom:1vw;
@@ -47,7 +47,7 @@ body{
 .header h1{
     float:left;
     color:white;
-    font:1.5vw consolas;
+    font:1.5vw 'Prompt', sans-serif;
     margin-left: 3vw;
     margin-right:55vw;
     margin-top:1vw;
@@ -73,18 +73,18 @@ a:active, a:focus{
 
 
 .intro h2{
-    font: 6vw Consolas;
+    font: 6vw 'Prompt', sans-serif;
     color:white;
     margin-bottom:2%;
 }
 
 .intro h1{
-    font: 2vw Consolas;
+    font: 2vw 'Prompt', sans-serif;
     color:white;
 }
 
 .smallTxt{
-    font: 1.5vw Consolas;
+    font: 1.5vw 'Prompt', sans-serif;
     color:white;
 }
 
@@ -121,7 +121,7 @@ a:active, a:focus{
 
 
 .projects h1{
-    font: 2.5vw Consolas;
+    font: 2.5vw 'Prompt', sans-serif;
     color:white;
 }
 
