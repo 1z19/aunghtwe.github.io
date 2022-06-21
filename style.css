@@ -30,8 +30,6 @@ body{
     top:0;
     background-color:#1f1c1c;
     border-bottom:0.2vw solid white;
-    
-    opacity:0.95;
     z-index:100;
 }
 .header a{
@@ -75,11 +73,12 @@ a:active, a:focus{
 .intro h2{
     font: 6vw 'Prompt', sans-serif;
     color:white;
-    margin-bottom:2%;
+    margin-bottom:0;
 }
 
 .intro h1{
     font: 2vw 'Prompt', sans-serif;
+    margin-top:0;
     color:white;
 }
 
@@ -105,24 +104,58 @@ a:active, a:focus{
 
 
 .projectScroll{
-    margin-top:20vh;
+    margin-top:5vw;
+    margin-bottom:8vw;
     text-align:center;
+}
+
+.projectScroll a{
+    border:medium solid white;
+    border-radius:5vw;
+    padding:1%;
 }
 
 .projectScroll a:hover{
     cursor:pointer;
+    opacity:0.5;
+    animation: opacityFadeIn 0.5s;
 }
 
-.projects{
-    margin: 0 auto;
-    padding-top:7vh;
-    margin-top:-7vh;
+@keyframes opacityFadeIn{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.5;
+    }
 }
 
 
-.projects h1{
+.projectsTitle{
+    margin-left: 3vw;
+    padding-top:4vw;
+    margin-top:-4vw;
+}
+
+
+.projectsTitle h1{
     font: 2.5vw 'Prompt', sans-serif;
     color:white;
 }
+
+.projectName{
+    font: 2vw 'Prompt', sans-serif;
+    color:white;
+}
+
+.projectOneContainer{
+    height:5vh;
+}
+
+.projectOneContainer h1{
+    margin-left:5vh;
+}
+
+
 
 
