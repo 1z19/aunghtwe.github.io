@@ -119,6 +119,24 @@ a:active, a:focus{
 .projectScroll i{
     display:block;
     margin-top:2vw;
+    animation: scroll 2s infinite;
+}
+
+.projectScroll i:hover{
+    cursor:pointer;
+}
+
+@keyframes scroll {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        -webkit-transform: translate(0, 2vw);
+    }
 }
 
 .projectScroll a:hover{
@@ -140,23 +158,87 @@ a:active, a:focus{
 .projectsTitle h1{
     font: 2.5vw 'Prompt', sans-serif;
     color:white;
+    line-height:2vw;
 }
 
 
 .projectsContainer{
     margin-top:2vw;
     margin-left:3vw;
-    
+    margin-bottom:25vw;
 }
+
 
 .projectName{
+    margin-right:0.5vw;
     font: 2vw 'Prompt', sans-serif;
-    background-color:transparent;
+    background-color:black;
     color:white;
     border:0.2vw solid white;
-    display:block;
+    border-bottom:none;
+    border-radius:0.5vw 0.5vw 0 0;
+}
+
+.projectName:hover{
+    background-color:#2b2b2b;
+    cursor:pointer;
+}
+
+.projectContent{
+    min-width: 95vw;
+    background-color:#2b2b2b;
+    margin-right:3vw;
+    border-radius:0vw 0.5vw 0.5vw 0.5vw;
+    border: 0.2vw solid white;
+    height:500px;
+}
+
+.projectIntro{
+    
+    left:0.5vw;
+}
+
+.experienceTitle{
+    margin-left: 3vw;
+    padding-top:4vw;
+    margin-top:-4vw;
+    border-bottom: 0.2vw solid white;
+}
+
+
+.experienceTitle h1{
+    font: 2.5vw 'Prompt', sans-serif;
+    color:white;
+    line-height:2vw;
 }
 
 
 
 
+.resumeTitle{
+    margin-left: 3vw;
+    padding-top:4vw;
+    margin-top:-4vw;
+    border-bottom: 0.2vw solid white;
+}
+
+
+.resumeTitle h1{
+    font: 2.5vw 'Prompt', sans-serif;
+    color:white;
+    line-height:2vw;
+}
+
+.contactMeTitle{
+    margin-left: 3vw;
+    padding-top:4vw;
+    margin-top:-4vw;
+    border-bottom: 0.2vw solid white;
+}
+
+
+.contactMeTitle h1{
+    font: 2.5vw 'Prompt', sans-serif;
+    color:white;
+    line-height:2vw;
+}

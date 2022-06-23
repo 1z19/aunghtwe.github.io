@@ -27,9 +27,15 @@
       <a id="projects" style="text-decoration: none" onclick="toProjects()"
         >Projects</a
       >
-      <a id="experience" style="text-decoration: none">Experience</a>
-      <a id="resume" style="text-decoration: none">Resume</a>
-      <a id="contactMe" style="text-decoration: none">Contact Me</a>
+      <a id="experience" style="text-decoration: none" onclick="toExperience()"
+        >Experience</a
+      >
+      <a id="resume" style="text-decoration: none" onclick="toResume()"
+        >Resume</a
+      >
+      <a id="contactMe" style="text-decoration: none" onclick="toContactMe()"
+        >Contact Me</a
+      >
     </div>
 
     <div class="intro" id="intro">
@@ -55,7 +61,7 @@
       <a class="smallTxt" id="toProjects" onclick="toProjects()"
         >View My Projects
       </a>
-      <i class="fa fa-angle-double-down"></i>
+      <i class="fa fa-angle-double-down" onclick="toProjects()"></i>
     </div>
 
     <div class="projectsTitle" id="projectsTitleContainer">
@@ -67,6 +73,36 @@
       <button class="projectName" id="projectOne">Project 2</button>
       <button class="projectName" id="projectOne">Project 3</button>
       <button class="projectName" id="projectOne">Project 4</button>
+      <div class="projectContent">
+        <div class="projectIntro">
+          <p class="smallTxt">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+            quisquam at nostrum ratione id laudantium tempora molestiae qui
+            provident repellendus assumenda deleniti asperiores quibusdam quam
+            tenetur nemo eaque adipisci similique placeat officia minus
+            perspiciatis voluptas, debitis labore! Delectus quod doloribus
+            dolores iure, repudiandae nam! Laudantium rerum harum consequuntur.
+            Enim dolor debitis cupiditate sint quidem necessitatibus ad ipsum
+            blanditiis eos repellat omnis nisi, a consectetur sunt, non voluptas
+            aliquam eveniet reiciendis qui rerum eaque. Alias perspiciatis illum
+            sed. Tenetur, molestias veritatis! Libero nam eum corrupti explicabo
+            minima molestiae nobis? Nesciunt, voluptatibus nulla magni ipsum
+            accusamus alias inventore! Fugit provident soluta veritatis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experienceTitle" id="experienceTitleContainer">
+      <h1>Experience</h1>
+    </div>
+
+    <div class="resumeTitle" id="resumeTitleContainer">
+      <h1>Resume</h1>
+    </div>
+
+    <div class="contactMeTitle" id="contactMeTitleContainer">
+      <h1>Contact Me</h1>
     </div>
 
     <!--    Scrolling Functions   -->
@@ -78,6 +114,21 @@
 
       function toProjects() {
         var element = document.getElementById("projectsTitleContainer");
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function toExperience() {
+        var element = document.getElementById("experienceTitleContainer");
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function toResume() {
+        var element = document.getElementById("resumeTitleContainer");
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function toContactMe() {
+        var element = document.getElementById("contactMeTitleContainer");
         element.scrollIntoView({ behavior: "smooth" });
       }
     </script>
